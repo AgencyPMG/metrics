@@ -30,7 +30,7 @@ class InMemoryCollectorTest extends UnitTestCase
         }
     }
 
-    protected function setUp()
+    protected function setUp() : void
     {
         $this->metrics = new InMemoryCollector();
     }

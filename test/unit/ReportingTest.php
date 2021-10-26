@@ -47,7 +47,7 @@ class ReportingTest extends UnitTestCase
         $this->assertSame([$this->set], $result->getMetricSets());
     }
 
-    protected function setUp()
+    protected function setUp() : void
     {
         $this->collector = $this->createMock(Collector::class);
         $this->set = new MetricSet([]);
