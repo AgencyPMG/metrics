@@ -1,0 +1,13 @@
+language: php
+
+php:
+  - '7.4'
+  - '8.0'
+
+notifications:
+  email: false
+
+install:
+  - composer install
+
+script: ./vendor/bin/phpunit
